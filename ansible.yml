@@ -1,0 +1,9 @@
+---
+- name: Change hostname
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Change hostname
+      hostname:
+        name: mynewhostname
+
