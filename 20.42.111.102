@@ -1,0 +1,11 @@
+---
+ name: "Server configuration"
+  hosts: "localhost"
+  tasks:
+
+    - name: "Configure hostname"
+      ansible.builtin.hostname:
+        name: "new-hostname"
+      become: true
+
+

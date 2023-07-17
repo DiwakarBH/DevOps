@@ -1,0 +1,9 @@
+---
+- name: swarm-node-7
+  hosts: localhost
+  become: true
+  tasks:
+    - name: swarm-node-7
+      hostname:
+        name: swarm-node-7
+
